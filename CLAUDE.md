@@ -38,6 +38,9 @@ Also append one line per decision to `projects/[project-name]/_records/decisions
 (or `dev/decisions.md` if developing MHC-G):
 `YYYY-MM-DD | [the decision] | [file it affected]`
 
+If the session produced a standalone artifact worth preserving beyond the log,
+offer to save it as a named document.
+
 ## Rule 4 — Persist
 
 All project work lives inside `projects/[name]/` — drafts, notes, and

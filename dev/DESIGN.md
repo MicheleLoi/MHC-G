@@ -48,7 +48,7 @@ conversational rules:
 
 - **Rule 1 — Before:** State intent, wait for confirmation
 - **Rule 2 — During:** Surface choices, let the human decide
-- **Rule 3 — After:** Write up what happened, append to session-log.md
+- **Rule 3 — After:** Write up what happened — as a session log entry or a named document
 - **Rule 4 — Persist:** All project work lives inside `projects/[name]/`
   — drafts and source materials at the root, system records in `_records/`.
   When a project is created, the user is told its path. When something is
