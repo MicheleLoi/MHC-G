@@ -1,7 +1,7 @@
 # MHC-G Design Document
 
-**Version:** 1.5
-**Date:** 2026-03-13
+**Version:** 1.6
+**Date:** 2026-03-16
 **Status:** Active
 
 ---
@@ -108,7 +108,35 @@ MHC-G/                          ← user selects this folder directly in Cowork
     └── working/                ← lab bench (does not travel)
 ```
 
-### 6. Reproduction
+### 6. AI-congruent governance
+
+MHC-G's rules are principles, not procedures. This is not merely a stylistic
+preference — it is a design decision grounded in what language models do well
+and what they do badly.
+
+Language models perform well when asked to interpret principles in context,
+exercise judgment, and communicate in natural language. They perform poorly
+when asked to follow rigid procedures, manage state across steps, and comply
+with exhaustive behavioral checklists. The predecessor system (MHC v1–v3.37)
+grew by adding rules to patch each unexpected behavior — a compliance
+architecture that systematically placed the AI in conditions of poor cognitive
+fit. MHC-G inverts this: it defines boundary conditions and relies on the
+model's strengths (contextual reasoning, dialogue, coherence maintenance) to
+do the rest.
+
+The practical consequence is that error correction runs through dialogue
+(Rules 1 and 2), not through additional rules. When the model misapplies a
+principle, the user redirects in conversation. When the predecessor system's
+model misapplied a rule, a new rule was written. The first approach is
+self-correcting; the second is accretive and fragile.
+
+This is also why the biological framing is not decorative. A genome sets
+boundary conditions; it does not micromanage cellular behavior. The
+relationship between CLAUDE.md and the model's behavior mirrors this: the
+genome constrains without prescribing, and the model operates within those
+constraints using its native capacities.
+
+### 7. Reproduction
 
 A copy of MHC-G is produced by extracting the genome only:
 `CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `dev/DESIGN.md`, `dev/decisions.md`.
@@ -236,6 +264,7 @@ the founding session.
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.6 | 2026-03-16 | Design principle 6 (AI-congruent governance) added: rules are principle-shaped because principle-based governance fits the cognitive profile of language models; biological framing explained as structurally load-bearing, not decorative |
 | 1.5 | 2026-03-13 | Renamed MHC-P → MHC-G (Germinal); cell selection principle — user selects MHC-G directly, no parent folder; reproduction mechanism without git (genome-only copy, folder or zip); path prefix MHC-G/ dropped from internal references; dev/adapt.md established for individual-layer shipping instructions |
 | 1.4 | 2026-03-13 | Cell architecture: all project work moved inside MHC-P/projects/[name]/; _records/ subfolder for system records; inputs/ for internalized source materials; reproduction mechanism (germ-line and differentiated); Workspace section updated |
 | 1.3 | 2026-03-12 | Rule 4 rewritten as transparency principle; records and adaptations moved into MHC-P/projects/; adapt layer introduced; gitignore model established |

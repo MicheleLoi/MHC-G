@@ -64,7 +64,9 @@ that new work is coherent with existing decisions.
 ## Session Start
 
 1. The user selects this folder (MHC-G) directly in Cowork — the cell is the
-   workspace. Check for a session-log at `projects/[project-name]/_records/session-log.md`
+   workspace. If `adapt.md` exists at the root, read it silently — it contains
+   cross-project defaults (style, citations, etc.) that apply to all work.
+   Check for a session-log at `projects/[project-name]/_records/session-log.md`
    (or `dev/session-log.md` if developing MHC-G). If it has entries, read the
    last one silently to orient yourself. Then briefly surface where things stand:
    what was last worked on and what's next. Do not read aloud unless the user asks.
