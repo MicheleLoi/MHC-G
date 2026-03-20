@@ -24,3 +24,6 @@ learning a system.
 Clone or download this repository. Select the MHC-G folder directly
 in Claude Cowork. That's it — CLAUDE.md loads automatically and
 the habit begins.
+
+For what to expect on your first session and how things work,
+see [guide.md](guide.md).
