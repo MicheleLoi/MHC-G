@@ -115,8 +115,8 @@ what language models do well and what they do badly.
 Language models perform well when asked to interpret principles in context,
 exercise judgment, and communicate in natural language. They perform poorly
 when asked to follow rigid procedures, manage state across steps, and comply
-with exhaustive behavioral checklists. The predecessor system (MHC v1–v3.37)
-grew by adding rules to patch each unexpected behavior — a compliance
+with exhaustive behavioral checklists. The predecessor system grew by adding
+rules to patch each unexpected behavior — a compliance
 architecture that systematically placed the AI in conditions of poor cognitive
 fit. MHC-G inverts this: it defines boundary conditions and relies on the
 model's strengths (contextual reasoning, dialogue, coherence maintenance) to
@@ -189,7 +189,7 @@ tells the user where their project lives.
 
 ## Cowork Technical Constraints
 
-*From compatibility testing on 2026-02-13 (MHC v3.11 / Cowork, Opus 4.6)*
+*From compatibility testing on 2026-02-13 (Cowork, Opus 4.6)*
 
 | Fact | Implication for MHC-G |
 |------|----------------------|
@@ -210,12 +210,12 @@ depends on these facts.*
 
 ## What MHC-G Is Not
 
-- **Not an adaptation of MHC.** MHC-G is a redesign. Do not port MHC commands,
-  templates, or the agent-file architecture into MHC-G. That defeats the purpose.
+- **Not a port of any prior system.** MHC-G is a redesign. Do not port commands,
+  templates, or agent-file architectures into MHC-G. That defeats the purpose.
 - **Not a governance system.** MHC-G does not produce audit-grade artifacts.
-  Users who need full audit trails should use MHC (Claude Code version).
-- **Not a replacement for MHC.** It is an entry point. The upgrade path from
-  MHC-G to full MHC is intentional and should remain open.
+  Users who need full audit trails should use a purpose-built governance tool.
+- **Not a comprehensive system.** It is an entry point. More structured
+  approaches exist for users who need them.
 
 ---
 
@@ -225,8 +225,8 @@ depends on these facts.*
       exists, behavior unconfirmed — test before designing any auto-export)
 - [ ] How does MHC-G handle continuity when the user forgets to trigger the
       session-end writeup? (silent recovery? next-session prompt?)
-- [ ] Is MHC-G a standalone product or an explicit gateway to full MHC?
-      Does that framing matter to the user?
+- [ ] Is MHC-G a standalone product or an explicit gateway to more structured
+      governance approaches? Does that framing matter to the user?
 - [ ] Can `decisions.md` (one line per decision) capture enough for users
       who later need to reconstruct reasoning? Or does it need more structure?
 - [ ] Distribution channel: independent download, bundled with Cowork
@@ -248,7 +248,7 @@ This document is updated when design decisions are made — not as a changelog
 of every change, but as a living statement of what MHC-G is and why.
 
 ### Founding trace
-`dev/working/trace_MHC-P_cowork_redesign_20260312.md` — contains the full
+`dev/working/trace_cowork_redesign_20260312.md` — contains the full
 reasoning behind the design, preserved formulations, and open questions as of
 the founding session.
 
@@ -259,9 +259,9 @@ the founding session.
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.6 | 2026-03-16 | Design principle 6 (AI-congruent governance) added: rules are principle-shaped because principle-based governance fits the cognitive profile of language models; biological framing explained as structurally load-bearing, not decorative |
-| 1.5 | 2026-03-13 | Renamed MHC-P → MHC-G (Germinal); cell selection principle — user selects MHC-G directly, no parent folder; reproduction mechanism without git (genome-only copy, folder or zip); path prefix MHC-G/ dropped from internal references; dev/adapt.md established for individual-layer shipping instructions |
-| 1.4 | 2026-03-13 | Cell architecture: all project work moved inside MHC-P/projects/[name]/; _records/ subfolder for system records; inputs/ for internalized source materials; reproduction mechanism (germ-line and differentiated); Workspace section updated |
-| 1.3 | 2026-03-12 | Rule 4 rewritten as transparency principle; records and adaptations moved into MHC-P/projects/; adapt layer introduced; gitignore model established |
+| 1.5 | 2026-03-13 | Renamed prototype → MHC-G (Germinal); cell selection principle — user selects MHC-G directly, no parent folder; reproduction mechanism without git (genome-only copy, folder or zip); path prefix MHC-G/ dropped from internal references; dev/adapt.md established for individual-layer shipping instructions |
+| 1.4 | 2026-03-13 | Cell architecture: all project work moved inside projects/[name]/; _records/ subfolder for system records; inputs/ for internalized source materials; reproduction mechanism (germ-line and differentiated); Workspace section updated |
+| 1.3 | 2026-03-12 | Rule 4 rewritten as transparency principle; records and adaptations moved into projects/; adapt layer introduced; gitignore model established |
 | 1.2 | 2026-03-12 | Rule 5 (Cohere) added; Rule 4 extended with file context default and input tracing; coherence check added to CONTRIBUTING.md |
-| 1.1 | 2026-03-12 | Rule 4 (Persist) added; governance artifacts moved from MHC-P/ to project folder; dev/ established as dev project folder; structure diagrams updated |
+| 1.1 | 2026-03-12 | Rule 4 (Persist) added; governance artifacts moved from prototype root to project folder; dev/ established as dev project folder; structure diagrams updated |
 | 1.0 | 2026-03-12 | Initial design — CLAUDE.md (3 rules), guide.md, session-log.md, decisions.md |

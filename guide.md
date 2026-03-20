@@ -184,4 +184,4 @@ If you are adapting MHC-G for a different context:
 ---
 
 *MHC-G v1.5 — Meaningful Human Control — Germinal*
-*A minimal adaptation of the MHC methodology for Claude Cowork.*
+*A minimal working habit for staying in control when AI does real work on your files.*
