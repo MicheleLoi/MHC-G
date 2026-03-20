@@ -38,8 +38,7 @@ files. MHC-G is what was already waiting when they hit that moment.
 ### 1. Conversation-first
 
 No commands. No template-filling. The user has a conversation; artifacts are a
-byproduct of that conversation. The discipline is in how Claude behaves, not in
-what the user has to learn.
+byproduct. The discipline is in how Claude behaves, not in what the user has to learn.
 
 ### 2. Five rules
 
@@ -74,7 +73,7 @@ test, it is not complete enough.
 ### 4. Limitations as features
 
 MHC-G is designed for Cowork. Cowork's constraints are treated as design
-affordances, not problems to work around:
+affordances:
 
 - **No `rm`** → artifacts accumulate; nothing is ever lost. This is immutability,
   not a limitation.
@@ -110,9 +109,8 @@ MHC-G/                          ← user selects this folder directly in Cowork
 
 ### 6. AI-congruent governance
 
-MHC-G's rules are principles, not procedures. This is not merely a stylistic
-preference — it is a design decision grounded in what language models do well
-and what they do badly.
+MHC-G's rules are principles, not procedures — a design decision grounded in
+what language models do well and what they do badly.
 
 Language models perform well when asked to interpret principles in context,
 exercise judgment, and communicate in natural language. They perform poorly
@@ -122,13 +120,11 @@ grew by adding rules to patch each unexpected behavior — a compliance
 architecture that systematically placed the AI in conditions of poor cognitive
 fit. MHC-G inverts this: it defines boundary conditions and relies on the
 model's strengths (contextual reasoning, dialogue, coherence maintenance) to
-do the rest.
-
-The practical consequence is that error correction runs through dialogue
-(Rules 1 and 2), not through additional rules. When the model misapplies a
-principle, the user redirects in conversation. When the predecessor system's
-model misapplied a rule, a new rule was written. The first approach is
-self-correcting; the second is accretive and fragile.
+do the rest. Error correction runs through dialogue (Rules 1 and 2), not
+through additional rules. When the model misapplies a principle, the user
+redirects in conversation. When the predecessor system's model misapplied a
+rule, a new rule was written. The first approach is self-correcting; the
+second is accretive and fragile.
 
 This is also why the biological framing is not decorative. A genome sets
 boundary conditions; it does not micromanage cellular behavior. The
@@ -142,8 +138,8 @@ A copy of MHC-G is produced by extracting the genome only:
 `CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `dev/DESIGN.md`, `dev/decisions.md`.
 
 User state (`projects/`, `dev/working/`, `adapt.md`, `dev/session-log.md`)
-does not travel — it belongs to this individual cell. The result is a new,
-inert cell ready to be activated. It can be delivered as a folder or a zip.
+does not travel — the result is a new cell ready to be activated, delivered
+as a folder or zip.
 
 There is no git requirement. Any individual may choose to track their cell in
 git, but reproduction does not depend on it.
@@ -167,12 +163,10 @@ MHC-G is a reproducible cell architecture for AI-assisted work.
   (session-log, decisions, project-level adapt).
 
 - **Inputs are internalized.** External files cross the membrane and become
-  markdown inside `inputs/`. The cell does not link out to source materials —
-  it absorbs them.
+  markdown inside `inputs/`.
 
 - **Deliverables are secreted outward.** When a deliverable is ready, Claude
-  exports it to wherever the user specifies. The markdown source remains inside
-  the cell; the secreted product takes whatever form the user requests.
+  exports it to wherever the user specifies.
 
 - **Adaptation is inside the cell.** `adapt.md` at user level (`MHC-G/`) and
   project level (`_records/`) modifies behavior without touching the genome.
@@ -180,8 +174,8 @@ MHC-G is a reproducible cell architecture for AI-assisted work.
 
 **Reproduction.** A new project can be initiated in two ways:
 
-- *Germ-line*: fresh instantiation from the genome alone, no prior project
-  state. User-level `adapt.md` is inherited silently if it exists.
+- *Germ-line*: fresh instantiation from the genome alone. User-level
+  `adapt.md` is inherited silently if it exists.
 
 - *Differentiated*: new project inherits `_records/adapt.md` from an existing
   project as its starting point. Conventions carry forward; work history does

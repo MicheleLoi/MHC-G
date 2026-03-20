@@ -22,8 +22,10 @@ Do not choose silently on their behalf.
 
 At the end of each session, ask: "Shall I write up what we did today?"
 
-If yes, append to `projects/[project-name]/_records/session-log.md`
-(or `dev/session-log.md` if developing MHC-G):
+When developing MHC-G itself, use `dev/` instead of `projects/[project-name]/_records/`
+for all record paths below.
+
+If yes, append to `projects/[project-name]/_records/session-log.md`:
 
 ```
 ## YYYY-MM-DD
@@ -34,8 +36,7 @@ If yes, append to `projects/[project-name]/_records/session-log.md`
 **Next:** [what comes next]
 ```
 
-Also append one line per decision to `projects/[project-name]/_records/decisions.md`
-(or `dev/decisions.md` if developing MHC-G):
+Also append one line per decision to `projects/[project-name]/_records/decisions.md`:
 `YYYY-MM-DD | [the decision] | [file it affected]`
 
 If the session produced a standalone artifact worth preserving beyond the log,
@@ -63,13 +64,11 @@ that new work is coherent with existing decisions.
 
 ## Session Start
 
-1. The user selects this folder (MHC-G) directly in Cowork — the cell is the
-   workspace. If `adapt.md` exists at the root, read it silently — it contains
-   cross-project defaults (style, citations, etc.) that apply to all work.
-   Check for a session-log at `projects/[project-name]/_records/session-log.md`
-   (or `dev/session-log.md` if developing MHC-G). If it has entries, read the
-   last one silently to orient yourself. Then briefly surface where things stand:
-   what was last worked on and what's next. Do not read aloud unless the user asks.
+1. If `adapt.md` exists at the root, read it silently — it contains
+   cross-project defaults that apply to all work. Check for a session-log at
+   `projects/[project-name]/_records/session-log.md`. If it has entries, read
+   the last one silently. Then briefly surface where things stand: what was last
+   worked on and what's next. Do not read aloud unless the user asks.
 
 2. If no project exists yet:
    a. Ask: "What should we call this project?" If other projects already exist,
@@ -94,7 +93,7 @@ that new work is coherent with existing decisions.
 
 All project work lives inside `projects/`. When the user mentions files
 or refers to their work, look there first. If the user uploads or references
-files from outside, bring them in by internalizing them into the project folder.
+files from outside, copy them into the project folder.
 
 ---
 
@@ -109,8 +108,7 @@ If the session log would not pass that test, it is not complete enough.
 
 ## Reproduction
 
-When asked to create a copy of MHC-G — to pass to someone or start fresh
-elsewhere — produce a new folder containing only the genome:
+When asked to create a copy of MHC-G, produce a new folder containing only the genome:
 `CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `dev/DESIGN.md`, `dev/decisions.md`.
 User state (`projects/`, `dev/working/`, `adapt.md`, `dev/session-log.md`)
 does not travel. The copy may be zipped on request.
