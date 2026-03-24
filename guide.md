@@ -39,6 +39,9 @@ When you start a project, Claude will ask you what to call it and create a folde
 for it inside MHC-G. You can have as many projects as you like — each gets its
 own folder.
 
+Before you start: if you have questions about what Claude can access and what
+it can't, see [`security.md`](security.md).
+
 ---
 
 ## Your first session

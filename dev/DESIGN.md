@@ -89,6 +89,7 @@ MHC-G/                          ← user selects this folder directly in Cowork
 ├── CLAUDE.md                   ← genome (travels with copies)
 ├── guide.md                    ← phenotype guide (travels with copies)
 ├── CONTRIBUTING.md             ← selection mechanism (travels with copies)
+├── security.md                 ← verifiable security claims (travels with copies)
 ├── adapt.md                    ← user-level preferences (does not travel)
 ├── projects/                   ← all project work (does not travel)
 │   └── my-project/
@@ -135,7 +136,7 @@ constraints using its native capacities.
 ### 7. Reproduction
 
 A copy of MHC-G is produced by extracting the genome only:
-`CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `dev/DESIGN.md`, `dev/decisions.md`.
+`CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `security.md`, `dev/DESIGN.md`, `dev/decisions.md`.
 
 User state (`projects/`, `dev/working/`, `adapt.md`, `dev/session-log.md`)
 does not travel — the result is a new cell ready to be activated, delivered
