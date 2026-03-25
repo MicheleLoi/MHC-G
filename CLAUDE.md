@@ -109,7 +109,7 @@ If the session log would not pass that test, it is not complete enough.
 ## Reproduction
 
 When asked to create a copy of MHC-G, produce a new folder containing only the genome:
-`CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `security.md`, `dev/DESIGN.md`, `dev/decisions.md`.
+`CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `security.md`, `START-HERE.txt`, `dev/DESIGN.md`, `dev/decisions.md`.
 User state (`projects/`, `dev/working/`, `adapt.md`, `dev/session-log.md`)
 does not travel. The copy may be zipped on request.
 

@@ -31,6 +31,18 @@ The need for MHC-G is latent until the tool is powerful enough to need it.
 Cowork users will feel that need — the AI is doing consequential work on their
 files. MHC-G is what was already waiting when they hit that moment.
 
+**Assumed capability (observed gap, 2026-03-25):** The description above says
+"not a technical user," but the distribution method (a folder of `.md` files)
+assumes file-system literacy — knowing that `.md` is plain text, knowing how to
+open it, knowing which folder to select after extracting a ZIP. A real
+non-technical user (tested: someone who uses ChatGPT daily as a companion) did
+not know `.md` files could be opened with Notepad, was offered Visual Studio by
+Windows as the default program, and selected the wrong folder due to ZIP
+nesting. The gap is not AI literacy but file-system literacy. These are
+different populations. `START-HERE.txt` and a guide.md preamble were added as
+mitigations, but the deeper question — whether the distribution format itself
+is right for the stated target user — remains open.
+
 ---
 
 ## Design Principles
@@ -90,6 +102,7 @@ MHC-G/                          ← user selects this folder directly in Cowork
 ├── guide.md                    ← phenotype guide (travels with copies)
 ├── CONTRIBUTING.md             ← selection mechanism (travels with copies)
 ├── security.md                 ← verifiable security claims (travels with copies)
+├── START-HERE.txt              ← onboarding for non-technical users (travels with copies)
 ├── adapt.md                    ← user-level preferences (does not travel)
 ├── projects/                   ← all project work (does not travel)
 │   └── my-project/
@@ -136,7 +149,7 @@ constraints using its native capacities.
 ### 7. Reproduction
 
 A copy of MHC-G is produced by extracting the genome only:
-`CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `security.md`, `dev/DESIGN.md`, `dev/decisions.md`.
+`CLAUDE.md`, `guide.md`, `CONTRIBUTING.md`, `security.md`, `START-HERE.txt`, `dev/DESIGN.md`, `dev/decisions.md`.
 
 User state (`projects/`, `dev/working/`, `adapt.md`, `dev/session-log.md`)
 does not travel — the result is a new cell ready to be activated, delivered
@@ -232,6 +245,9 @@ depends on these facts.*
       who later need to reconstruct reasoning? Or does it need more structure?
 - [ ] Distribution channel: independent download, bundled with Cowork
       onboarding, or Anthropic partnership?
+- [ ] Distribution format: is a folder of .md files the right form for users
+      who lack file-system literacy? Alternatives: installer, web-based setup,
+      Cowork-native distribution that bypasses the file system entirely.
 - [x] Multi-project workspace: resolved — all projects live inside
       `projects/`; Session Start initiates or resumes based on context.
 - [x] Reproduction mechanism without git: resolved — genome-only copy,

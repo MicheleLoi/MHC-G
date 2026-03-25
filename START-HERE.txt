@@ -1,0 +1,10 @@
+Welcome to MHC-G.
+
+The files in this folder ending in .md are plain text.
+You can open them with Notepad — right-click the file,
+choose "Open with", and select Notepad.
+
+Read guide.md first. It will walk you through setup.
+
+If you downloaded a ZIP and see MHC-G inside MHC-G,
+use the inner folder — that's the one with the files in it.

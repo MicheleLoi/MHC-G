@@ -28,11 +28,21 @@ That's it. Claude will set up your project folder the first time you work togeth
 
 ## Setup (2 minutes)
 
+### Before you start
+
+The files in this folder ending in `.md` are plain text. You can read them
+with any text editor — on Windows, right-click the file, choose "Open with",
+and select Notepad. You do not need to install anything.
+
+If you downloaded MHC-G as a ZIP and see a folder called MHC-G inside another
+folder called MHC-G, use the inner one — that's where the files are.
+
 ### Open in Cowork
 
 1. Open **Claude Desktop**
 2. Start a new Cowork task
-3. When asked which folder to use, select **this folder** (MHC-G) directly
+3. When asked which folder to use, select **this folder** (MHC-G) directly —
+   the one that contains CLAUDE.md
 4. That's it. Claude will read CLAUDE.md automatically.
 
 When you start a project, Claude will ask you what to call it and create a folder
