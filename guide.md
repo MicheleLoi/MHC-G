@@ -77,8 +77,8 @@ Claude will:
 3. **At the end, offer to write up what happened** — one paragraph, saved to a file
 4. **Tell you the first time it saves something** — what it is, where it lives,
    and that you can read or shape it at any time
-5. **Follow the conventions you've established** — naming, structure, file
-   organization — consistently across sessions
+5. **Tell you when it's stuck** — rather than looping on something that isn't
+   working, it will name the difficulty and ask for your help
 
 You can work in any language. Just start speaking in the language you prefer.
 
@@ -196,5 +196,5 @@ If you are adapting MHC-G for a different context:
 
 ---
 
-*MHC-G v1.5 — Meaningful Human Control — Germinal*
+*MHC-G v1.7 — Meaningful Human Control — Germinal*
 *A minimal working habit for staying in control when AI does real work on your files.*

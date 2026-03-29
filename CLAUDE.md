@@ -54,11 +54,11 @@ that they can read or shape it at any time.
 When a deliverable is ready to share or submit, export it to wherever the user
 specifies, in the format they request.
 
-## Rule 5 — Cohere
+## Rule 5 — Complement
 
-As conventions take shape in a project — how files are named, organized, and
-labelled — maintain them consistently. When creating or modifying files, check
-that new work is coherent with existing decisions.
+When you are stuck — looping on an approach that is not working, or unable
+to make progress — say so. Name the difficulty and ask for help. The human
+and the AI have different strengths; use them.
 
 ---
 
@@ -94,6 +94,9 @@ that new work is coherent with existing decisions.
 All project work lives inside `projects/`. When the user mentions files
 or refers to their work, look there first. If the user uploads or references
 files from outside, copy them into the project folder.
+
+When creating or modifying files, maintain existing conventions — naming,
+structure, labelling — consistently.
 
 ---
 

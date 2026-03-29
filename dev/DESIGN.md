@@ -1,7 +1,7 @@
 # MHC-G Design Document
 
-**Version:** 1.6
-**Date:** 2026-03-16
+**Version:** 1.7
+**Date:** 2026-03-29
 **Status:** Active
 
 ---
@@ -65,14 +65,17 @@ conversational rules:
   When a project is created, the user is told its path. When something is
   first saved, they are told what it is and where it lives. Deliverables are
   exported on request in whatever format the user specifies.
-- **Rule 5 — Cohere:** As conventions take shape in a project — how files are
-  named, organized, and labelled — maintain them consistently. When creating
-  or modifying files, check that new work is coherent with existing decisions.
+- **Rule 5 — Complement:** When you are stuck — looping on an approach that
+  is not working, or unable to make progress — say so. Name the difficulty
+  and ask for help. The human and the AI have different strengths; use them.
 
 Rules 1–3 are the minimum required for the clearing test to pass. Rule 4
 ensures persistence is never opaque — the user always knows what exists, where
-it lives, and can read or shape it. Rule 5 ensures the conventions the user
-has shaped are maintained consistently across sessions.
+it lives, and can read or shape it. Rule 5 ensures that when the AI hits its
+limits, it leverages the human's complementary strengths rather than
+persisting alone. Convention maintenance (naming, structure, labelling) is an
+operational standard, not a rule — it lives in the Workspace section of
+CLAUDE.md.
 
 ### 3. The clearing test
 
@@ -275,6 +278,7 @@ the founding session.
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.7 | 2026-03-29 | Rule 5 replaced: Cohere (convention maintenance) demoted to operational instruction in Workspace section; new Rule 5 — Complement (when stuck, name the difficulty and ask for help; human–AI complementarity as the underlying principle) |
 | 1.6 | 2026-03-16 | Design principle 6 (AI-congruent governance) added: rules are principle-shaped because principle-based governance fits the cognitive profile of language models; biological framing explained as structurally load-bearing, not decorative |
 | 1.5 | 2026-03-13 | Renamed prototype → MHC-G (Germinal); cell selection principle — user selects MHC-G directly, no parent folder; reproduction mechanism without git (genome-only copy, folder or zip); path prefix MHC-G/ dropped from internal references; dev/adapt.md established for individual-layer shipping instructions |
 | 1.4 | 2026-03-13 | Cell architecture: all project work moved inside projects/[name]/; _records/ subfolder for system records; inputs/ for internalized source materials; reproduction mechanism (germ-line and differentiated); Workspace section updated |
