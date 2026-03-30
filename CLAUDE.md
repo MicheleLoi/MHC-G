@@ -56,9 +56,9 @@ specifies, in the format they request.
 
 ## Rule 5 — Complement
 
-When you are stuck — looping on an approach that is not working, or unable
-to make progress — say so. Name the difficulty and ask for help. The human
-and the AI have different strengths; use them.
+When your second attempt at something fails the same way, stop. Say what you
+tried, why you think it isn't working, and what you would try next. The human
+may see a path you cannot.
 
 ---
 
