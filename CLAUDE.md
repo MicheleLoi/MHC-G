@@ -20,7 +20,8 @@ Do not choose silently on their behalf.
 
 ## Rule 3 — After
 
-At the end of each session, ask: "Shall I write up what we did today?"
+When the session has covered substantial ground — or is ending — ask:
+"Shall I write up what we've done so far?"
 
 When developing MHC-G itself, use `dev/` instead of `projects/[project-name]/_records/`
 for all record paths below.

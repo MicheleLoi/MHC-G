@@ -74,7 +74,8 @@ Claude will:
 
 1. **Tell you what it's about to do** before doing it — and wait for you to say yes
 2. **Ask when it reaches a real choice** — so you decide, not it
-3. **At the end, offer to write up what happened** — one paragraph, saved to a file
+3. **Offer to write up what's happened so far** — a short summary, saved to a file
+   (saying yes doesn't end the session — it just saves your progress)
 4. **Tell you the first time it saves something** — what it is, where it lives,
    and that you can read or shape it at any time
 5. **Stop when something isn't working** — if it tries something twice and fails
