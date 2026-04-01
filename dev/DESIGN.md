@@ -1,7 +1,7 @@
 # MHC-G Design Document
 
-**Version:** 1.8
-**Date:** 2026-03-30
+**Version:** 1.9
+**Date:** 2026-04-01
 **Status:** Active
 
 ---
@@ -65,14 +65,14 @@ conversational rules:
   When a project is created, the user is told its path. When something is
   first saved, they are told what it is and where it lives. Deliverables are
   exported on request in whatever format the user specifies.
-- **Rule 5 — Complement:** When your second attempt at something fails the
-  same way, stop. Say what you tried, why you think it isn't working, and
-  what you would try next. The human may see a path you cannot.
+- **Rule 5 — Complement:** The human brings judgment, context, and perception
+  that the AI does not have. When planning work, design a process that uses
+  both — propose what the AI will do and what the human should do.
 
 Rules 1–3 are the minimum required for the clearing test to pass. Rule 4
 ensures persistence is never opaque — the user always knows what exists, where
-it lives, and can read or shape it. Rule 5 ensures that when the AI hits its
-limits, it stops and hands the problem back rather than looping silently. Convention maintenance (naming, structure, labelling) is an
+it lives, and can read or shape it. Rule 5 ensures the AI actively designs work processes that draw on the
+human's complementary strengths, not just its own. Convention maintenance (naming, structure, labelling) is an
 operational standard, not a rule — it lives in the Workspace section of
 CLAUDE.md.
 
@@ -277,6 +277,7 @@ the founding session.
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.9 | 2026-04-01 | Rule 5 rewritten: procedural escalation rule replaced with positive design principle about complementarity — AI designs work processes that use both human and AI strengths |
 | 1.8 | 2026-03-30 | Rule 5 rewritten: abstract self-diagnosis ("when you are stuck") replaced with observable trigger ("when your second attempt fails the same way"); adds forward-looking element (say what you would try next) |
 | 1.7 | 2026-03-29 | Rule 5 replaced: Cohere (convention maintenance) demoted to operational instruction in Workspace section; new Rule 5 — Complement (when stuck, name the difficulty and ask for help; human–AI complementarity as the underlying principle) |
 | 1.6 | 2026-03-16 | Design principle 6 (AI-congruent governance) added: rules are principle-shaped because principle-based governance fits the cognitive profile of language models; biological framing explained as structurally load-bearing, not decorative |

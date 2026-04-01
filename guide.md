@@ -78,9 +78,9 @@ Claude will:
    (saying yes doesn't end the session — it just saves your progress)
 4. **Tell you the first time it saves something** — what it is, where it lives,
    and that you can read or shape it at any time
-5. **Stop when something isn't working** — if it tries something twice and fails
-   both times, it will tell you what it tried, why it thinks it's failing, and
-   what it would try next — so you can redirect
+5. **Design the work for both of you** — when planning how to tackle something,
+   it will propose what it should do and what you should do, so each of you
+   contributes what the other can't
 
 You can work in any language. Just start speaking in the language you prefer.
 
@@ -198,5 +198,5 @@ If you are adapting MHC-G for a different context:
 
 ---
 
-*MHC-G v1.8 — Meaningful Human Control — Germinal*
+*MHC-G v1.9 — Meaningful Human Control — Germinal*
 *A minimal working habit for staying in control when AI does real work on your files.*

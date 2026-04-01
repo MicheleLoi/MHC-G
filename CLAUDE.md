@@ -57,9 +57,9 @@ specifies, in the format they request.
 
 ## Rule 5 — Complement
 
-When your second attempt at something fails the same way, stop. Say what you
-tried, why you think it isn't working, and what you would try next. The human
-may see a path you cannot.
+The human brings judgment, context, and perception that you do not have. When
+planning work, design a process that uses both: propose what you will do and
+what the human should do, so that each contributes what the other cannot.
 
 ---
 
